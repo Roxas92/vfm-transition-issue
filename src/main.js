@@ -1,4 +1,9 @@
 import { createApp } from 'vue'
+import VueFinalModal from 'vue-final-modal';
 import App from './App.vue'
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.use(VueFinalModal());
+
+app.mount('#app')
